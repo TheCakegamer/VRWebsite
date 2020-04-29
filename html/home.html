@@ -8,18 +8,24 @@
           href="../css/index.css"/>
     <script src="http://code.jquery.com/jquery.min.js"></script>
     <script type="text/javascript"
-            src="../jsscripts/blurronscroll.js"></script>
+            src="../jsscripts/NavOpening.js"></script>
 
 </head>
 <body>
+<div id="myNav" class="overlay">
+    <a href="javascript:void(-1)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
 <div class="navbar regular-wrapper">
-    <img src="../media/Logo.png" style="max-width: 5%; margin: 10px 15px 10px 20px; float:left;">
-    <ul>
-        <li>VR</li>
-    </ul>
+    <img id="navbtn" src="../media/Logo.png" style="max-width: 5%; margin: 10px 15px 10px 20px; float:left; cursor:pointer" onclick="openNav()" alt="VR">
 </div>
 <div class="parallax-wrapper">
-        <h1>Experience Virtual-<span></span></h1>
+        <h1>Experience Virtual-<span class="virtual"></span></h1>
 </div>
 <div class="content ">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
