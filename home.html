@@ -19,7 +19,7 @@
     <a href="javascript:void(-1)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
         <a onclick="document.getElementById('about').scrollIntoView(); closeNav()">About</a>
-        <a href="#">Best Games to Play</a>
+        <a onclick="document.getElementById('BVRGTP').scrollIntoView(); closeNav()">Best Games to Play</a>
         <a href="#">Gallery</a>
         <a href="#">Contact</a>
     </div>
@@ -31,8 +31,8 @@
 <div class="parallax-wrapper">
     <h1 class="title">Experience Virtual-<span class="virtual"></span></h1>
 </div>
-<div class="content ">
-    <h1 id="about">About VR</h1>
+<div class="content " id="about">
+    <h1>About VR</h1>
     <p>As we all know VR stands for Virtual Reality. <br>
         But what can the Technology of Virtual Reality do for us in terms of entertainment?</p>
     <div id="container1">
@@ -40,7 +40,11 @@
         <img src="media/VRfromOutside_Edit.png" alt="Inside VR"/>
     </div>
 </div>
-<div class="parallax-wrapper">
+    <video loop muted autoplay class="fullscreen-bg__video" style="margin: -400px 0 0 0; overflow: hidden">
+        <source src= "media/VRLibrary.mp4" type="video/mp4">
+    </video>
+<div class="content" id="BVRGTP">
+    <h1 >Best VR Games to play</h1>
 </div>
 </body>
 </html>
