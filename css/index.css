@@ -51,6 +51,12 @@ body {
     font-size: 20px;
 }
 
+.gallery{
+    max-width: 33%;
+    display: inline-block;
+    alignment: top;
+}
+
 
 h1.title {
     font-family: 'Poppins', sans-serif;
