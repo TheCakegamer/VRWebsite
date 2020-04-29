@@ -2,7 +2,7 @@ function openNav() {
     window.focus();
     document.getElementById("myNav").style.height = "100%";
     document.getElementById("navbtn").onclick = closeNav;
-    document.getElementById("myNav").scrollIntoView(true);
+    document.getElementById("myNav").scrollIntoView( {behavior: "smooth"});
     document.body.style.overflowY = 'hidden';
 }
 
