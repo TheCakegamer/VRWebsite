@@ -11,3 +11,7 @@ function closeNav() {
     document.getElementById("navbtn").onclick = openNav;
     document.body.style.overflowY = 'auto';
 }
+
+$(window).on('load', function () {
+    $("#container1").twentytwenty();
+});
