@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VR</title>
+    <link type="text/css"
+          rel="stylesheet"
+          href="css/index.css"/>
+    <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="jsscripts/jquery.event.move.js" type="text/javascript"></script>
+    <script src="jsscripts/jquery.twentytwenty.js" type="text/javascript"></script>
+    <script type="text/javascript"
+            src="jsscripts/NavOpening.js"></script>
+
+</head>
+<body>
+<div id="myNav" class="overlay">
+    <a href="javascript:void(-1)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a onclick="document.getElementById('about').scrollIntoView(); closeNav()">About</a>
+        <a href="#">Best Games to Play</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+<div class="navbar regular-wrapper">
+    <img id="navbtn" src="media/Logo.png"
+         style="max-width: 5%; margin: 10px 15px 10px 20px; float:left; cursor:pointer" onclick="openNav()" alt="VR">
+</div>
+<div class="parallax-wrapper">
+    <h1 class="title">Experience Virtual-<span class="virtual"></span></h1>
+</div>
+<div class="content ">
+    <h1 id="about">About VR</h1>
+    <p>As we all know VR stands for Virtual Reality. <br>
+        But what can the Technology of Virtual Reality do for us in terms of entertainment?</p>
+    <div id="container1">
+        <img src="media/VRfromOutside.png" alt="Outside VR"/>
+        <img src="media/VRfromOutside_Edit.png" alt="Inside VR"/>
+    </div>
+</div>
+<div class="parallax-wrapper">
+</div>
+</body>
+</html>
