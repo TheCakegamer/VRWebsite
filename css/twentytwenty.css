@@ -38,6 +38,7 @@
 
 .twentytwenty-before-label:before, .twentytwenty-after-label:before {
   color: white;
+  font-family: Monserat, sans-serif;
   font-size: 13px;
   letter-spacing: 0.1em; }
 
