@@ -165,3 +165,13 @@ span.virtual:before {
     -moz-box-shadow: inset 10px 10px 16px -12px rgba(0,0,0,0.81);
     box-shadow: inset 10px 10px 16px -12px rgba(0,0,0,0.81);
 }
+
+footer {
+    background-color: #1c1c1c;
+    width: 100%; /* Full width */
+    height: 5%;
+    color: #f2f2f2;
+    padding-top: 2%;
+    padding-left: 3%;
+    font-family: Monserat, sans-serif;
+}

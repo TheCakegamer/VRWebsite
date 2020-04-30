@@ -21,11 +21,10 @@
 <div id="myNav" class="overlay">
     <a href="javascript:void(-1)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
-        <a onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'}); closeNav()">About</a>
-        <a onclick="document.getElementById('BVRGTP').scrollIntoView({behavior: 'smooth'}); closeNav()">Best Games to
+        <a onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'}); closeNav()" style="cursor:pointer">About</a>
+        <a onclick="document.getElementById('BVRGTP').scrollIntoView({behavior: 'smooth'}); closeNav()" style="cursor:pointer">Best Games to
             Play</a>
-        <a onclick="document.getElementById('gallery').scrollIntoView({behavior: 'smooth'}); closeNav()">Gallery</a>
-        <a href="#">Contact</a>
+        <a onclick="document.getElementById('gallery').scrollIntoView({behavior: 'smooth'}); closeNav()" style="cursor:pointer">Gallery</a>
     </div>
 </div>
 <div class="navbar regular-wrapper">
@@ -39,6 +38,8 @@
     <h1>About VR</h1>
     <p>As we all know VR stands for Virtual Reality. <br>
         But what can the Technology of Virtual Reality do for us in terms of entertainment?</p>
+    <p>There are currently multiple contenders in the VR Industry, most well known are companies like Oculus (Oculus Rift), HTC (HTC Vive) and Microsoft (Holo-Lens).
+    <br>I personally bought the Oculus Rift S in November of 2019 and I've been enjoying it ever since and I can say that the slightly steep price of 514.-CHF is definitively worth it.<br></p>
     <div id="container1">
         <img src="media/VRfromOutside.png" alt="Outside VR"/>
         <img src="media/VRfromOutside_Edit.png" alt="Inside VR"/>
@@ -54,22 +55,22 @@
     <div class="row">
         <div class="col-xs">
             <div class="box">
-                <img src="media/beatsaber.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <img src="media/beatsaber.png" onclick="openModal();currentSlide(1)" class="hover-shadow" style="cursor:pointer">
             </div>
         </div>
         <div class="col-xs">
             <div class="box">
-                <img src="media/budgetcuts.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                <img src="media/budgetcuts.png" onclick="openModal();currentSlide(2)" class="hover-shadow" style="cursor:pointer">
             </div>
         </div>
         <div class="col-xs">
             <div class="box">
-                <img src="media/jobsim.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                <img src="media/jobsim.png" onclick="openModal();currentSlide(3)" class="hover-shadow" style="cursor:pointer">
             </div>
         </div>
         <div class="col-xs">
             <div class="box">
-                <img src="media/superhot.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                <img src="media/superhot.png" onclick="openModal();currentSlide(4)" class="hover-shadow" style="cursor:pointer">
             </div>
         </div>
     </div>
@@ -118,19 +119,19 @@
 
             <!-- Thumbnail image controls -->
             <div class="column">
-                <img class="demo" src="media/beatsaber.png" onclick="currentSlide(1)" alt="Beat Saber">
+                <img class="demo" src="media/beatsaber.png" onclick="currentSlide(1)" alt="Beat Saber" style="cursor:pointer">
             </div>
 
             <div class="column">
-                <img class="demo" src="media/budgetcuts.png" onclick="currentSlide(2)" alt="Budget Cuts">
+                <img class="demo" src="media/budgetcuts.png" onclick="currentSlide(2)" alt="Budget Cuts" style="cursor:pointer">
             </div>
 
             <div class="column">
-                <img class="demo" src="media/jobsim.png" onclick="currentSlide(3)" alt="Job Simulator">
+                <img class="demo" src="media/jobsim.png" onclick="currentSlide(3)" alt="Job Simulator" style="cursor:pointer">
             </div>
 
             <div class="column">
-                <img class="demo" src="media/superhot.png" onclick="currentSlide(4)" alt="SUPER HOT">
+                <img class="demo" src="media/superhot.png" onclick="currentSlide(4)" alt="SUPER HOT" style="cursor:pointer">
             </div>
         </div>
     </div>
@@ -157,4 +158,5 @@
     </div>
 </div>
 </body>
+<footer>&copy; Copyright 2020 Tim Hess</footer>
 </html>
