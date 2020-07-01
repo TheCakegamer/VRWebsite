@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Virtual Reality</title>
@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="css/flexboxgrid.css" type="text/css" media="screen"/>
     <link rel="stylesheet" href="css/Lightbox.css" type="text/css" media="screen"/>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="jsscripts/jquery.event.move.js" type="text/javascript"></script>
-    <script src="jsscripts/Lightbox.js" type="text/javascript"></script>
-    <script src="jsscripts/jquery.twentytwenty.js" type="text/javascript"></script>
+    <script src="js/jquery.event.move.js" type="text/javascript"></script>
+    <script src="js/Lightbox.js" type="text/javascript"></script>
+    <script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
     <script type="text/javascript"
-            src="jsscripts/NavOpening.js"></script>
+            src="js/NavOpening.js"></script>
 
 </head>
 <body>
@@ -168,9 +168,52 @@
                 <img class="gallery" src="media/BudgetCuts/budgetcuts02.png">
                 <img class="gallery" src="media/Others/VacationSim.png">
                 <img class="gallery" src="media/Jobsim/jobsim02.png">
+                <?php
+                    $path = "/../../../../upload-dir";
+
+                    if ($handle = opendir($path)) {
+                        while (false !== ($file = readdir($handle))) {
+                            if ('.' === $file) continue;
+                                if ('..' === $file) continue;
+
+                                echo "<img class='gallery' src='$file'>";
+                            }
+                         closedir($handle);
+                    }
+                ?>
             </div>
         </div>
     </div>
+</div>
+<div class="content" id="submit">
+    <h1>Submit Images</h1>
+    <div th:if="${message}">
+        <h2 th:text="${message}"></h2>
+    </div>
+
+    <div>
+        <form method="POST" enctype="multipart/form-data" action="/">
+            <table>
+                <tr>
+                    <td>File to upload:</td>
+                    <td><input type="file" name="file"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Upload"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div>
+        <ul>
+            <li th:each="file : ${files}">
+                <a th:href="${file}" th:text="${file}"></a>
+            </li>
+        </ul>
+    </div>
+
 </div>
 <div class="content" id="video">
     <h1>Video</h1>
